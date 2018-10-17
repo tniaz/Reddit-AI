@@ -37,6 +37,7 @@ class MyWindow(QtWidgets.QMainWindow):
         # mapping button
         self.readyButton.clicked.connect(self.ready)
         self.show()
+        self.chat.append("Commands: \nSay open Reddit subreddit to open specified url.\nSay quit to exit the application.")
         self.chat.append("AI: Hello!")
         talkToMe("Hello!")
         QCoreApplication.processEvents()
